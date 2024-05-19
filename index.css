@@ -7,7 +7,7 @@ div.gridContainer {
 }
 
 div.gridCell {
-    border: 1px red dotted;
+    background-color: mintcream;
 }
 
 div.coloredGridCell {

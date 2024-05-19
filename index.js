@@ -34,8 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
         } 
         sideWidth = newSideWidth;
         //Delete the current container.
-        
-
+        const divGridContainer = document.querySelector("div.gridContainer");
+        divGridContainer.remove();
+        createGrid();
     }
 
     function main() {
