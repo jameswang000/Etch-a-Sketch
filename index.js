@@ -24,14 +24,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function resetGrid(e) {
-        inputSideWidthNumber = document.querySelector("#sideWidth");
-        if(parseFloat(inputSideWidthNumber.value) < 1 ||
-           parseFloat(inputSideWidthNumber.value) > 100) {
+        const inputSideWidthNumber = document.querySelector("#sideWidth");
+        let newSideWidth = parseFloat(inputSideWidthNumber.value);
+        if(newSideWidth < 1 || newSideWidth > 100) {
             //Illegal values!
             inputSideWidthNumber.value = sideWidth;
-            alert("Please enter a valid side width (1-100)!")
-
+            alert("Please enter a valid side width (1-100)!");
+            return;
         } 
+        sideWidth = newSideWidth;
+        //Delete the current container.
+        
+
     }
 
     function main() {
