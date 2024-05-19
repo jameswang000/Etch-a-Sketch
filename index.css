@@ -7,6 +7,9 @@ div.gridContainer {
 }
 
 div.gridCell {
-    flex: 1 1 calc((1000px)/ 17);
     border: 1px red dotted;
+}
+
+div.coloredGridCell {
+    background-color: yellow;
 }
